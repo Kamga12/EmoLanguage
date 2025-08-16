@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary Meta Tags -->
+    <title>EmojiPager - Convert Text to Emoji Language | Pantheon-Inspired Encoder</title>
+    <meta name="title" content="EmojiPager - Convert Text to Emoji Language | Pantheon-Inspired Encoder" />
+    <meta name="description"
+        content="Transform text into a fully reversible emoji language inspired by the series Pantheon. Every word maps to unique emoji sequences for creative, encrypted communication. Try the retro pager interface!" />
+    <meta name="keywords"
+        content="emoji, encoder, decoder, text to emoji, emoji language, pantheon, retro pager, encryption, creative communication, hawkins tech" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Hawkins.Tech" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emojipager.com/" />
+    <meta property="og:title" content="EmojiPager - Convert Text to Emoji Language" />
+    <meta property="og:description"
+        content="Transform text into a fully reversible emoji language inspired by the series Pantheon. Every word maps to unique emoji sequences for creative, encrypted communication." />
+    <meta property="og:image" content="https://emojipager.com/image.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="EmojiPager retro pager device showing emoji encoded messages" />
+    <meta property="og:site_name" content="EmojiPager" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://emojipager.com/" />
+    <meta property="twitter:title" content="EmojiPager - Convert Text to Emoji Language" />
+    <meta property="twitter:description"
+        content="Transform text into a fully reversible emoji language inspired by the series Pantheon. Every word maps to unique emoji sequences for creative, encrypted communication." />
+    <meta property="twitter:image" content="https://emojipager.com/image.png" />
+    <meta property="twitter:image:alt" content="EmojiPager retro pager device showing emoji encoded messages" />
+    <meta property="twitter:creator" content="@a904guy" />
+    <meta property="twitter:site" content="@a904guy" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#1a1d22" />
+    <meta name="msapplication-TileColor" content="#1a1d22" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="EmojiPager" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://emojipager.com/" />
+
+    <!-- Preconnect to API domain -->
+    <link rel="preconnect" href="https://api.emojipager.com" />
+
+    <style>
+        :root {
+            --frame-w: 780px;
+            /* shared width for panel and pager */
+            --bezel: #1a1d22;
+            --bezel-hi: #262b33;
+            --bezel-lo: #0f1115;
+            --screen-bg: #b9d2a7;
+            --screen-tint: #a6c593;
+            --screen-glass: #e5f2df;
+            --lcd-on: #0d4f27;
+            --ui-bg: rgba(20, 26, 34, .72);
+            --ui-brd: rgba(255, 255, 255, .08);
+            --ui-hi: rgba(255, 255, 255, .14);
+            --ui-txt: #e7eef6;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: radial-gradient(1200px 800px at 20% 0%, #0a0d12 0%, #05070a 40%, #000 100%);
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            color: #cdd5df;
+        }
+
+        .wrap {
+            min-height: 100%;
+            display: grid;
+            place-items: center;
+            padding: 24px
+        }
+
+        .stack {
+            width: min(92vw, var(--frame-w));
+            max-width: var(--frame-w);
+            display: grid;
+            gap: 18px
+        }
+
+        /* ---------- INPUT PANEL ---------- */
+        .panel {
+            width: 100%;
+            box-sizing: border-box;
+            background: var(--ui-bg);
+            border: 1px solid var(--ui-brd);
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .45), inset 0 1px 0 var(--ui-hi);
+            padding: 14px;
+            display: grid;
+            gap: 12px;
+            backdrop-filter: blur(6px);
+            overflow: hidden;
+        }
+
+        .label {
+            font-size: 12px;
+            letter-spacing: .08em;
+            color: #aab7c8;
+            margin: 0 0 6px 2px
+        }
+
+        .input {
+            width: 100%;
+            box-sizing: border-box;
+            resize: vertical;
+            min-height: 96px;
+            max-height: 33vh;
+            border-radius: 12px;
+            border: 1px solid var(--ui-brd);
+            background: linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(0, 0, 0, .25));
+            color: var(--ui-txt);
+            padding: 12px 14px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08);
+        }
+
+        .input::placeholder {
+            color: #98a7ba;
+            opacity: .85
+        }
+
+        .controls-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap
+        }
+
+        .select,
+        .btn {
+            border-radius: 10px;
+            border: 1px solid var(--ui-brd);
+            background: linear-gradient(180deg, #2a2f37, #13161b);
+            color: #e7eef6;
+            padding: 10px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), 0 4px 12px rgba(0, 0, 0, .35);
+        }
+
+        .select option {
+            background: #2a2f37;
+            color: #e7eef6;
+            padding: 8px 12px;
+        }
+
+        .select option:hover,
+        .select option:focus {
+            background: #3a4149;
+            color: #ffffff;
+        }
+
+        .btn.primary {
+            background: linear-gradient(180deg, #3db767, #1b6c3e)
+        }
+
+        .btn:active {
+            transform: translateY(1px)
+        }
+
+        .help {
+            font-size: 12px;
+            color: #9fb0c6
+        }
+
+        /* Compact actions menu for mobile */
+        .actions {
+            display: none
+        }
+
+        .actions summary {
+            list-style: none;
+            cursor: pointer;
+            border: 1px solid var(--ui-brd);
+            border-radius: 10px;
+            background: linear-gradient(180deg, #2a2f37, #13161b);
+            color: #e7eef6;
+            padding: 10px 12px;
+            font-size: 14px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), 0 4px 12px rgba(0, 0, 0, .35);
+        }
+
+        .actions[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0
+        }
+
+        .menu {
+            border: 1px solid var(--ui-brd);
+            border-top: 0;
+            background: #151a22;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;
+        }
+
+        .menu button,
+        .menu select {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px 12px;
+            background: transparent;
+            border: 0;
+            color: #dfe7f2;
+            font-size: 14px
+        }
+
+        .menu select option {
+            background: #151a22;
+            color: #dfe7f2;
+            padding: 8px 12px;
+        }
+
+        .menu select option:hover,
+        .menu select option:focus {
+            background: #1b222c;
+            color: #ffffff;
+        }
+
+        .menu button:hover {
+            background: #1b222c
+        }
+
+        /* ---------- PAGER ---------- */
+        .pager {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            aspect-ratio: 26/15;
+            height: auto;
+            max-height: 88vh;
+            background:
+                linear-gradient(145deg, var(--bezel-hi), var(--bezel-lo) 70%),
+                radial-gradient(60% 120% at 80% 10%, rgba(255, 255, 255, .08), transparent 60%);
+            border-radius: 22px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .65), inset 0 2px 0 rgba(255, 255, 255, .06), inset 0 -2px 0 rgba(0, 0, 0, .5);
+            padding: clamp(14px, 2.2vw, 18px);
+        }
+
+        .screw {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #616a76, #2e343d 50%, #1d2229 70%),
+                conic-gradient(from 0deg, #1e2329, #3b424c 25%, #13171c 25%, #13171c 75%, #3b424c 75%, #1e2329);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 2px rgba(0, 0, 0, .6);
+        }
+
+        .screw.tl {
+            top: 10px;
+            left: 10px
+        }
+
+        .screw.tr {
+            top: 10px;
+            right: 10px
+        }
+
+        .screw.bl {
+            bottom: 10px;
+            left: 10px
+        }
+
+        .screw.br {
+            bottom: 10px;
+            right: 10px
+        }
+
+        .screen {
+            position: relative;
+            height: 52%;
+            background: linear-gradient(#2b322b, #0e120f);
+            border-radius: 14px;
+            padding: clamp(8px, 1.6vw, 12px);
+            box-shadow: inset 0 2px 0 rgba(255, 255, 255, .05), inset 0 -2px 0 rgba(0, 0, 0, .6), 0 10px 24px rgba(0, 0, 0, .55);
+        }
+
+        .lcd {
+            height: 100%;
+            border-radius: 10px;
+            background:
+                repeating-linear-gradient(to bottom, rgba(16, 40, 20, .08), rgba(16, 40, 20, .08) 2px, rgba(255, 255, 255, .02) 3px, rgba(255, 255, 255, .02) 4px),
+                linear-gradient(180deg, var(--screen-glass), var(--screen-tint) 12%, var(--screen-bg) 55%, #9fbb8e 100%);
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .28), inset 0 8px 30px rgba(255, 255, 255, .18), inset 0 -10px 28px rgba(0, 0, 0, .15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lcd::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(12deg, rgba(255, 255, 255, .22) 0%, rgba(255, 255, 255, .05) 28%, transparent 28.1%),
+                radial-gradient(120% 60% at 120% 0%, rgba(255, 255, 255, .2), transparent 50%);
+            pointer-events: none;
+            mix-blend-mode: screen;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 8px 10px 0 10px;
+            font-size: clamp(10px, 1.6vw, 12px);
+            letter-spacing: .08em;
+            color: #1a391f;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+            opacity: .9
+        }
+
+        .status .right {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .loading {
+            animation: spin 1s linear infinite;
+            font-size: 12px;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .battery {
+            width: 24px;
+            height: 12px;
+            border: 1px solid #213e27;
+            border-radius: 2px;
+            position: relative;
+            background: rgba(25, 60, 30, .35);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2)
+        }
+
+        .battery::after {
+            content: "";
+            position: absolute;
+            right: -4px;
+            top: 3px;
+            width: 3px;
+            height: 6px;
+            background: #213e27;
+            border-radius: 1px
+        }
+
+        .battery .level {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            bottom: 1px;
+            width: 70%;
+            background: linear-gradient(#5abf6f, #389a53);
+            border-radius: 1px
+        }
+
+        .msg-wrap {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 26px;
+            bottom: 10px;
+            display: grid;
+            grid-template-rows: auto 1fr
+        }
+
+        .hint {
+            font-size: clamp(9px, 1.4vw, 11px);
+            color: #24452b;
+            opacity: .85;
+            margin: 0 12px 8px 12px
+        }
+
+        .message {
+            margin: 6px 10px 10px 10px;
+            padding: clamp(4px, .8vw, 6px) 8px;
+            height: calc(100% - 15px);
+            border-radius: 6px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(0, 0, 0, .03));
+            outline: none;
+            overflow: hidden auto;
+            color: var(--lcd-on);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, .2), 0 0 8px rgba(21, 110, 55, .25);
+            font-family: "Lucida Console", "Courier New", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 34px;
+            /* starting point, auto-fit takes over */
+            line-height: 1.15;
+            letter-spacing: .06em;
+            caret-color: #0b5a2c;
+            -webkit-user-modify: read-write-plaintext-only;
+            white-space: pre-wrap;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: clamp(10px, 1.6vw, 14px)
+        }
+
+        .btn-copy {
+            height: 44px;
+            border: 0;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #2a2f37, #13161b);
+            color: #dfe7f2;
+            font-weight: 700;
+            letter-spacing: .04em;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), inset 0 -2px 0 rgba(0, 0, 0, .6), 0 6px 16px rgba(0, 0, 0, .45);
+            cursor: pointer;
+        }
+
+        .brand {
+            position: absolute;
+            left: clamp(18px, 3vw, 24px);
+            bottom: clamp(18px, 3vw, 24px);
+            font-weight: 700;
+            letter-spacing: .08em;
+            color: #e7eef6;
+            text-transform: uppercase;
+            opacity: .9;
+            filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .7))
+        }
+
+        .grill {
+            position: absolute;
+            right: clamp(18px, 3vw, 24px);
+            bottom: clamp(18px, 3vw, 24px);
+            width: clamp(90px, 16vw, 120px);
+            height: clamp(38px, 6.8vw, 48px);
+            border-radius: 10px;
+            background:
+                radial-gradient(3px 3px at 6px 6px, #0a0d12 50%, transparent 52%) 0 0 / 14px 14px,
+                radial-gradient(3px 3px at 13px 6px, #0a0d12 50%, transparent 52%) 0 0 / 14px 14px,
+                radial-gradient(3px 3px at 6px 13px, #0a0d12 50%, transparent 52%) 0 0 / 14px 14px,
+                radial-gradient(3px 3px at 13px 13px, #0a0d12 50%, transparent 52%) 0 0 / 14px 14px,
+                linear-gradient(180deg, #20262d, #101319);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), inset 0 -1px 0 rgba(0, 0, 0, .7);
+        }
+
+        /* ---------- MOBILE FIXES ---------- */
+        @media (max-width: 500px) {
+            .wrap {
+                padding: 12px
+            }
+
+            .stack {
+                width: 100%;
+                max-width: none;
+                gap: 12px
+            }
+
+            .panel {
+                padding: 12px;
+                border-radius: 18px
+            }
+
+            .controls-row {
+                display: none
+            }
+
+            .actions {
+                display: block
+            }
+
+            .pager {
+                aspect-ratio: auto;
+                border-radius: 24px;
+                padding: 10px;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                gap: 10px;
+                height: auto;
+                max-height: none;
+            }
+
+            .screw,
+            .grill {
+                display: none
+            }
+
+            .brand {
+                display: none
+            }
+
+            .screen {
+                height: auto;
+                border-radius: 16px;
+                padding: 8px
+            }
+
+            .lcd {
+                border-radius: 12px;
+                min-height: clamp(260px, 48vh, 640px)
+            }
+
+            .msg-wrap {
+                position: static;
+                padding: 6px 8px 10px 8px;
+                gap: 6px
+            }
+
+            .message {
+                margin: 0;
+                height: clamp(220px, 44vh, 580px);
+                font-size: 24px;
+                line-height: 1.2
+            }
+        }
+
+        textarea {
+            box-sizing: border-box
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 24px;
+            max-width: var(--frame-w);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            font-size: clamp(28px, 5vw, 44px);
+            font-weight: 800;
+            letter-spacing: .04em;
+            color: #e7eef6;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+            margin: 0 0 6px 0;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #9fb0c6;
+            margin: 0 0 14px 0;
+        }
+
+        .subtitle a {
+            color: #3db767;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .subtitle a:hover {
+            text-decoration: underline;
+        }
+
+        .tagline {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #cdd5df;
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .tagline .highlight {
+            color: #3db767;
+            font-weight: 600;
+        }
+
+        .netflix {
+            color: #e50914;
+            font-weight: 600;
+        }
+
+        .netflix a {
+            color: #e50914;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .netflix a:hover {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        .tooltip {
+            display: inline-block;
+            position: relative;
+            cursor: help;
+            font-weight: 700;
+        }
+
+        a.tooltip {
+            color: #3db767;
+        }
+
+        .tooltip::after {
+            content: "(in our dictionary)";
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1d22;
+            color: #e7eef6;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+        }
+
+        .tooltip-reversible {
+            display: inline-block;
+            position: relative;
+            cursor: help;
+            font-weight: 700;
+        }
+
+        a.tooltip-reversible {
+            
+            color: #3db767;
+        }
+
+        .tooltip-reversible::after {
+            content: "(in most scenarios)";
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1d22;
+            color: #e7eef6;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+        }
+
+        .tooltip-reversible:hover::after {
+            opacity: 1;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #9fb0c6;
+            opacity: 0.85;
+        }
+
+        .footer a {
+            color: #3db767;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NL367JLGGN"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-NL367JLGGN');</script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="stack">
+
+            <!-- HEADER / INTRO -->
+            <header class="intro">
+                <h1 class="title">📟 EmojiPager</h1>
+                <p class="subtitle">Powered by <strong><a href="https://github.com/a904guy/EmoLanguage">Emo
+                            Language</a></strong>, a project of <a href="https://hawkins.tech"
+                        target="_blank">Hawkins.Tech</a></p>
+                <p class="tagline">
+                    Inspired by the series <span class="netflix">Netflix's <em><a
+                                href="https://www.netflix.com/title/81937398" target="_blank">Pantheon</a></em></span>,
+                    EmojiPager lets you
+                    <span class="highlight">encode and decode messages entirely in emoji</span>.
+                    <a href="https://github.com/a904guy/EmoLanguage/blob/main/documents/dictionary.txt" target="_blank"
+                        class="tooltip" style="text-decoration: none;">Every word*</a> maps to a unique emoji or emoji
+                    sequence, creating a
+                    <span class="highlight"><span class="tooltip-reversible">fully reversible*</span> emoji
+                        language</span> for fun, and creative communication.
+                </p>
+            </header>
+
+
+
+            <!-- INPUT PANEL -->
+            <div class="panel">
+                <label for="src" class="label">Encoder / Decoder Input</label>
+                <textarea id="src" class="input" placeholder="Type text to encode or decode..."></textarea>
+                
+                <!-- Honeypot field to prevent spam/bots -->
+                <input name="message" id="subject" style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" tabindex="-1" autocomplete="off" />
+
+                <!-- Desktop toolbar -->
+                <div class="controls-row" aria-label="controls">
+                    <select id="mode" class="select">
+                        <option value="encode">Encode</option>
+                        <option value="decode">Decode</option>
+                    </select>
+                    <button id="swap" class="btn" title="Swap mode and content">🗘</button>
+                    <button id="clear" class="btn">Clear</button>
+                    <button id="copyInput" class="btn">Copy Input</button>
+                    <button id="apply" class="btn primary">Apply to Pager</button>
+                </div>
+
+                <!-- Mobile compact menu -->
+                <details class="actions">
+                    <summary>Actions ▾</summary>
+                    <div class="menu">
+                        <select id="mode_m" class="select" style="margin:6px"></select>
+                        <button data-act="swap">🗘 Swap Mode & Content</button>
+                        <button data-act="apply">Apply to Pager</button>
+                        <button data-act="copyInput">Copy Input</button>
+                        <button data-act="clear">Clear</button>
+                    </div>
+                </details>
+
+                <div class="help">Live preview updates as you type.</div>
+            </div>
+
+            <!-- PAGER -->
+            <div class="pager" role="img" aria-label="Retro pager showing encoded or decoded output">
+                <div class="screw tl"></div>
+                <div class="screw tr"></div>
+                <div class="screw bl"></div>
+                <div class="screw br"></div>
+
+                <div class="screen">
+                    <div class="lcd" id="lcd">
+                        <div class="status">
+                            <div class="left"><span class="carrier">ALPHA</span></div>
+                            <div class="right"><span class="loading" id="loading" style="display: none;">⏳</span><span
+                                    class="sig">📶</span><span class="battery"><span class="level"
+                                        id="bat"></span></span><span class="clock" id="clock">12:00</span></div>
+                        </div>
+                        <div class="msg-wrap">
+                            <div class="hint">Output</div>
+                            <div id="message" class="message" contenteditable="plaintext-only" spellcheck="false"
+                                aria-label="Pager output area"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons"><button class="btn-copy" id="btnCopy">Copy Output</button></div>
+                <div class="brand">EmojiPager</div>
+                <div class="grill" aria-hidden="true"></div>
+            </div>
+            <footer class="footer">
+                <p>✨ Built for fun by <a href="https://github.com/a904guy/" target="_blank">Andy Hawkins</a> of <a
+                        href="https://hawkins.tech" target="_blank">Hawkins.Tech</a> ✨</p>
+                <p>Missing Words? <a
+                        href="https://github.com/a904guy/EmoLanguage/issues/new?labels=enhancement&title=Missing%20Word:%20{word}&body=Please%20add%20{word}%20to%20the%20mappings."
+                        target="_blank">Submit Here</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        /* Clock/Battery */
+        const clockEl = document.getElementById('clock'); const bat = document.getElementById('bat');
+        function updateClock() { const d = new Date(); clockEl.textContent = `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}` }
+        updateClock(); setInterval(updateClock, 30_000);
+        let level = .72; setInterval(() => { level += (Math.random() - .5) * .03; level = Math.max(.12, Math.min(1, level)); bat.style.width = Math.round(level * 100) + '%' }, 4000);
+
+        /* Elements */
+        const src = document.getElementById('src');
+        const out = document.getElementById('message');
+        const lcd = document.getElementById('lcd');
+        const modeDesk = document.getElementById('mode');
+
+        /* Mirror mode select into mobile menu */
+        const modeMob = document.getElementById('mode_m');
+        ['encode', 'decode'].forEach(v => { const o = document.createElement('option'); o.value = v; o.textContent = v.charAt(0).toUpperCase() + v.slice(1); modeMob.appendChild(o); });
+        function syncModes(to = 'mob') { if (to === 'mob') modeMob.value = modeDesk.value; else modeDesk.value = modeMob.value; }
+        modeDesk.addEventListener('change', () => { syncModes('mob'); transform(); });
+        modeMob.addEventListener('change', () => { syncModes('desk'); transform(); });
+
+        /* API Functions */
+        const API_BASE = 'https://api.emojipager.com';
+
+        /* Cache Functions */
+        function getCacheKey(mode, text) {
+            // Use a simple hash instead of btoa to handle Unicode characters
+            const normalizedText = text.trim().toLowerCase();
+            let hash = 0;
+            for (let i = 0; i < normalizedText.length; i++) {
+                const char = normalizedText.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash; // Convert to 32-bit integer
+            }
+            return `emojipager_${mode}_${Math.abs(hash)}`;
+        }
+
+        function getCachedResult(mode, text) {
+            try {
+                const key = getCacheKey(mode, text);
+                const cached = sessionStorage.getItem(key);
+                return cached ? JSON.parse(cached) : null;
+            } catch (error) {
+                console.warn('Cache read error:', error);
+                return null;
+            }
+        }
+
+        function setCachedResult(mode, text, result) {
+            try {
+                const key = getCacheKey(mode, text);
+                const cacheData = {
+                    result: result,
+                    timestamp: Date.now()
+                };
+                sessionStorage.setItem(key, JSON.stringify(cacheData));
+            } catch (error) {
+                console.warn('Cache write error:', error);
+            }
+        }
+
+        async function encode(text) {
+            if (!text.trim()) return '';
+
+            // Check cache first
+            const cached = getCachedResult('encode', text);
+            if (cached) {
+                
+                // Still track analytics for cached results
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'encode_text', {
+                        'event_category': 'emoji_conversion',
+                        'event_label': 'text_to_emoji_cached',
+                        'value': text.length,
+                        'custom_parameters': {
+                            'input_length': text.length,
+                            'output_length': cached.result ? cached.result.length : 0,
+                            'word_count': text.split(/\s+/).filter(word => word.length > 0).length,
+                            'cache_hit': true
+                        }
+                    });
+                }
+                
+                return cached.result;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE}/encode`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: text })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // Cache the result
+                setCachedResult('encode', text, data.result);
+
+                // Track encode event to Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'encode_text', {
+                        'event_category': 'emoji_conversion',
+                        'event_label': 'text_to_emoji',
+                        'value': text.length,
+                        'custom_parameters': {
+                            'input_length': text.length,
+                            'output_length': data.result ? data.result.length : 0,
+                            'word_count': text.split(/\s+/).filter(word => word.length > 0).length,
+                            'cache_hit': false
+                        }
+                    });
+                }
+
+                return data.result;
+            } catch (error) {
+                console.error('Encode error:', error);
+                return `Error: ${error.message}`;
+            }
+        }
+
+        async function decode(text) {
+            if (!text.trim()) return '';
+
+            // Check cache first
+            const cached = getCachedResult('decode', text);
+            if (cached) {
+                
+                // Still track analytics for cached results
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'decode_emoji', {
+                        'event_category': 'emoji_conversion',
+                        'event_label': 'emoji_to_text_cached',
+                        'value': text.length,
+                        'custom_parameters': {
+                            'input_length': text.length,
+                            'output_length': cached.result ? cached.result.length : 0,
+                            'emoji_count': (text.match(/[\u{1F600}-\u{1F64F}]|[\u{1F300}-\u{1F5FF}]|[\u{1F680}-\u{1F6FF}]|[\u{1F1E0}-\u{1F1FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu) || []).length,
+                            'cache_hit': true
+                        }
+                    });
+                }
+                
+                return cached.result;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE}/decode`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: text })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // Cache the result
+                setCachedResult('decode', text, data.result);
+
+                // Track decode event to Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'decode_emoji', {
+                        'event_category': 'emoji_conversion',
+                        'event_label': 'emoji_to_text',
+                        'value': text.length,
+                        'custom_parameters': {
+                            'input_length': text.length,
+                            'output_length': data.result ? data.result.length : 0,
+                            'emoji_count': (text.match(/[\u{1F600}-\u{1F64F}]|[\u{1F300}-\u{1F5FF}]|[\u{1F680}-\u{1F6FF}]|[\u{1F1E0}-\u{1F1FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu) || []).length,
+                            'cache_hit': false
+                        }
+                    });
+                }
+
+                return data.result;
+            } catch (error) {
+                console.error('Decode error:', error);
+                return `Error: ${error.message}`;
+            }
+        }
+
+        out.addEventListener('keydown', fitMessage);
+
+        /* Binary-search auto fit for stability */
+        function fitMessage() {
+            const el = (typeof out !== 'undefined' && out) ? out : document.getElementById('message');
+            if (!el) return;
+
+            const MIN = 12, MAX = 50;
+            const EPS = 20; // small fudge for rounding
+
+            // start from current computed size clamped to bounds
+            let fs = Math.min(MAX, Math.max(MIN, parseFloat(getComputedStyle(el).fontSize) || MAX));
+            el.style.fontSize = fs + 'px';
+
+            const fits = () => {
+                return el.scrollWidth <= el.clientWidth &&
+                    el.scrollHeight <= el.clientHeight;
+            };
+
+            // 1) shrink until it fits
+            while (!fits() && fs > MIN) {
+                fs -= 1;
+                el.style.fontSize = fs + 'px';
+            }
+
+            // 2) then grow back up to just before overflow
+            while (fits() && fs < MAX) {
+                fs += 1;
+                el.style.fontSize = fs + 'px';
+                if (!fits()) { // stepped over the limit
+                    fs -= 1;
+                    el.style.fontSize = fs + 'px';
+                    break;
+                }
+            }
+        }
+
+
+        async function transform() {
+            const val = src.value;
+            const m = modeDesk.value;
+            const loading = document.getElementById('loading');
+            
+            // Honeypot check - if the hidden field has any value, it's likely a bot
+            const honeypot = document.getElementById('subject');
+            if (honeypot && honeypot.value.trim()) {
+                return;
+            }
+
+            if (!val.trim()) {
+                out.textContent = '';
+                requestAnimationFrame(fitMessage);
+                return;
+            }
+
+            // Show loading spinner
+            loading.style.display = 'inline';
+
+            try {
+                let res;
+                if (m === 'encode') {
+                    res = await encode(val);
+                } else if (m === 'decode') {
+                    res = await decode(val);
+                }
+
+                out.textContent = res || '';
+                requestAnimationFrame(() => {
+                    fitMessage();
+                    // Scroll to bottom of the message
+                    out.scrollTop = out.scrollHeight;
+                });
+            } catch (error) {
+                console.error('Transform error:', error);
+                out.textContent = `Error: ${error.message}`;
+                requestAnimationFrame(() => {
+                    fitMessage();
+                    // Scroll to bottom of the message
+                    out.scrollTop = out.scrollHeight;
+                });
+            } finally {
+                // Hide loading spinner
+                loading.style.display = 'none';
+            }
+        }
+
+        /* Observe size changes so mobile stays responsive */
+        const ro = new ResizeObserver(() => requestAnimationFrame(fitMessage));
+        ro.observe(out);
+        ro.observe(lcd);
+
+        /* Controls */
+        document.getElementById('apply').addEventListener('click', transform);
+        document.getElementById('clear').addEventListener('click', () => { src.value = ''; transform(); src.focus(); });
+        document.getElementById('copyInput').addEventListener('click', async () => { try { await navigator.clipboard.writeText(src.value); } catch { } });
+        document.getElementById('swap').addEventListener('click', () => {
+            // Swap the mode
+            const currentMode = modeDesk.value;
+            const newMode = currentMode === 'encode' ? 'decode' : 'encode';
+            modeDesk.value = newMode;
+            
+            // Sync to mobile dropdown
+            syncModes('mob');
+            
+            // Swap input and output content
+            const inputContent = src.value;
+            const outputContent = out.textContent;
+            
+            src.value = outputContent;
+            out.textContent = inputContent;
+            
+            // Trigger transform with new content
+            transform();
+        });
+        document.querySelectorAll('.actions .menu button').forEach(b => {
+            b.addEventListener('click', e => {
+                const act = e.currentTarget.dataset.act;
+                if (act === 'apply') transform();
+                if (act === 'copyInput') navigator.clipboard.writeText(src.value).catch(() => { });
+                if (act === 'clear') { src.value = ''; transform(); src.focus(); }
+                if (act === 'swap') {
+                    // Swap the mode
+                    const currentMode = modeDesk.value;
+                    const newMode = currentMode === 'encode' ? 'decode' : 'encode';
+                    modeDesk.value = newMode;
+                    
+                    // Sync to mobile dropdown
+                    syncModes('mob');
+                    
+                    // Swap input and output content
+                    const inputContent = src.value;
+                    const outputContent = out.textContent;
+                    
+                    src.value = outputContent;
+                    out.textContent = inputContent;
+                    
+                    // Trigger transform with new content
+                    transform();
+                }
+                e.currentTarget.closest('details').open = false;
+            });
+        });
+
+        document.getElementById('btnCopy').addEventListener('click', async () => {
+            try {
+                const txt = out.textContent; await navigator.clipboard.writeText(txt);
+                const old = out.textContent; out.textContent = 'COPIED'; fitMessage();
+                setTimeout(() => { out.textContent = old; fitMessage(); }, 700);
+            } catch { }
+        });
+
+        /* Debounce function for API calls */
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        const debouncedTransform = debounce(transform, 250); // 500ms delay
+
+        /* Live */
+        src.addEventListener('input', debouncedTransform);
+        window.addEventListener('load', () => { syncModes('mob'); transform(); });
+        window.addEventListener('orientationchange', () => setTimeout(fitMessage, 120));
+        window.addEventListener('resize', () => { fitMessage(); });
+    </script>
+</body>
+
+</html>

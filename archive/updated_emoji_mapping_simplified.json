@@ -1,0 +1,289 @@
+{
+  "_metadata": {
+    "description": "Simplified emoji mapping with grammatical transformations eliminated",
+    "version": "2.0.0",
+    "elimination_rules_applied": true,
+    "original_count": 34772,
+    "simplified_count": "estimated ~29500",
+    "reduction_percentage": "~15%",
+    "transformation_categories_eliminated": [
+      "simple_plurals",
+      "regular_verb_conjugations", 
+      "standard_comparatives",
+      "mechanical_adverbs"
+    ],
+    "semantic_distinctions_preserved": [
+      "abstract_nouns_with_distinct_meaning",
+      "professional_titles",
+      "emotional_variations",
+      "technical_terminology",
+      "irregular_forms"
+    ]
+  },
+  
+  "base_forms": {
+    "a": "🅰️🔴",
+    "aardvark": "🐘🦙",
+    "abacus": "🧮",
+    "abalone": "🐚🟡",
+    "abandon": "🚪❌",
+    "abandonment": "🚪😢",
+    "abasement": "🤲🕳️",
+    "abash": "😳",
+    "abatement": "📉⚖️",
+    "abattoir": "🏭🐄",
+    "abbess": "👑",
+    "abbreviate": "✂️",
+    "abbreviation": "🔡",
+    "abdicate": "👑🚪",
+    "abdication": "👑🚪",
+    "abdomen": "🤰",
+    "abdominal": "🤰🏋️‍♂️",
+    "abduct": "🚨",
+    "abduction": "👤🚨",
+    "abductor": "🦶🚨",
+    "aberrant": "⚡️❌",
+    "aberration": "❗️",
+    "abet": "🤝",
+    "abettor": "🤝⚖️",
+    "abeyance": "⏸️🕰️",
+    "abhor": "🤢",
+    "abhorrence": "😱",
+    "abhorrent": "🤬❌",
+    "ability": "🧠💪",
+    "abject": "😔💧",
+    "abjuration": "✖️📜",
+    "ablation": "🔧🛠️", 
+    "ablution": "🛁🚿",
+    "abnegate": "🚫💰",
+    "abnegation": "🙅‍♀️💸",
+    "abnormal": "⚠️❌",
+    "abnormality": "⚠️❓",
+    "abolish": "🚫📜",
+    "abolition": "🚫📜",
+    "abolitionist": "✊🏿⚖️",
+    "abominable": "👹",
+    "abominate": "🤢❌",
+    "abomination": "💀❌",
+    "aboriginal": "🌿🏞️",
+    "aborigine": "🌏🏞️",
+    "abort": "❌",
+    "abortion": "🛑🤰",
+    "abortionist": "🩺⚖️",
+    "abortive": "❌🚫",
+    "abound": "🌊",
+    "about": "🔄🔴",
+    "aboveboard": "🛠️💬",
+    "abracadabra": "🎩✨",
+    "abrasion": "🪓💥",
+    "abrasive": "🪓⚡️",
+    "abreast": "🧑‍🤝‍🧑",
+    "abridge": "✂️📚",
+    "abridgment": "📚✂️",
+    "abrogate": "📜❌",
+    "abrogation": "📜🚫",
+    "abrupt": "⚡️",
+    "abscess": "💥🩹",
+    "abscissa": "📐🗺️",
+    "abscond": "🏃‍♂️💨🚪",
+    "absence": "🚪❌⚪",
+    "absent": "🚶‍♂️",
+    "absentee": "🚶‍♂️❌",
+    "absenteeism": "🏢🚶‍♂️❌",
+    "absinth": "🍹🟢",
+    "absinthe": "🍹🌿",
+    "absolute": "🔒⚖️",
+    "absolution": "🙏🕊️",
+    "absolutism": "👑⚖️",
+    "absolve": "🕊️✔️",
+    "absorb": "🌀",
+    "absorbent": "🧻",
+    "absorption": "💧🌀",
+    "abstain": "🚫🍺",
+    "abstemious": "🥗🍽️",
+    "abstention": "🗳️❌",
+    "abstinence": "🚫🍬",
+    "abstinent": "🚫🍺",
+    "abstract": "🧠💭",
+    "abstraction": "🧠💭",
+    "abstruse": "🤔🔍",
+    "absurd": "🤪",
+    "absurdity": "🤪",
+    "abundance": "🍀",
+    "abundant": "🌾💰",
+    "abuse": "😢",
+    "abusive": "🤬",
+    "abutment": "🏗️",
+    "abut": "🧱",
+    "abysmal": "🌊❌",
+    "abyss": "🌌",
+    "acacia": "🌳",
+    "academia": "🎓🏛️",
+    "academic": "📚",
+    "academician": "🎓📚",
+    "academy": "🏛️📚",
+    "acanthus": "🌿",
+    "accelerate": "🚀⚡️",
+    "acceleration": "🏎️⚡",
+    "accelerator": "🏎️⚙️",
+    "accent": "🔤",
+    "accentuate": "✨",
+    "accentuation": "🔠✨",
+    "acceptable": "✅",
+    "acceptance": "🤝",
+    "accept": "🤝",
+    "access": "🗝️",
+    "accessibility": "♿🔑",
+    "accessible": "♿",
+    "accession": "📈",
+    "accessory": "💍",
+    "accident": "🚑",
+    "accidental": "❌",
+    "acclaim": "👏🎉",
+    "acclamation": "👏🎉",
+    "acclimate": "🌡️",
+    "acclimation": "🏞️🌿",
+    "acclimatization": "🌍",
+    "accolade": "🏆",
+    "accommodate": "🏠🛏️",
+    "accommodation": "🏨",
+    "accompany": "👫",
+    "accompaniment": "🎶🎤",
+    "accompanist": "🎹👨‍🎤",
+    "accomplice": "👤",
+    "accomplish": "🏆",
+    "accomplishment": "🎉✅",
+    "accordance": "🤝",
+    "accord": "🤝",
+    "accordion": "🪗"
+  },
+  
+  "eliminated_transformations": {
+    "plurals_eliminated": [
+      {"base": "a", "eliminated": ["as"]},
+      {"base": "i", "eliminated": ["is"]},
+      {"base": "hi", "eliminated": ["his"]},
+      {"base": "pi", "eliminated": ["pis"]},
+      {"base": "ru", "eliminated": ["rus"]},
+      {"base": "di", "eliminated": ["dis"]},
+      {"base": "vi", "eliminated": ["vis"]},
+      {"base": "cu", "eliminated": ["cus"]},
+      {"base": "bas", "eliminated": ["bass"]},
+      {"base": "as", "eliminated": ["ass"]}
+    ],
+    
+    "verb_conjugations_eliminated": [
+      {"base": "be", "eliminated": ["bing", "bed"]},
+      {"base": "fe", "eliminated": ["fing", "fed"]},
+      {"base": "te", "eliminated": ["ted", "ting"]},
+      {"base": "we", "eliminated": ["wing", "wed"]},
+      {"base": "re", "eliminated": ["red", "ring"]},
+      {"base": "pe", "eliminated": ["ping"]},
+      {"base": "he", "eliminated": ["hing"]},
+      {"base": "ge", "eliminated": ["ging"]},
+      {"base": "de", "eliminated": ["ding"]},
+      {"base": "le", "eliminated": ["ling"]}
+    ],
+    
+    "comparatives_eliminated": [
+      {"base": "we", "eliminated": ["weest", "west"]},
+      {"base": "odd", "eliminated": ["odder", "oddest"], "note": "kept base 'odd' with distinct meaning"},
+      {"base": "ne", "eliminated": ["nest"]},
+      {"base": "ev", "eliminated": ["ever"]},
+      {"base": "me", "eliminated": ["mer"]},
+      {"base": "pe", "eliminated": ["pest"]},
+      {"base": "he", "eliminated": ["her"]},
+      {"base": "pi", "eliminated": ["pier"]},
+      {"base": "ew", "eliminated": ["ewer"]},
+      {"base": "cr", "eliminated": ["crest"]}
+    ],
+    
+    "mechanical_adverbs_eliminated": [
+      {"base": "ab", "eliminated": ["ably"]},
+      {"base": "du", "eliminated": ["duly"]},
+      {"base": "ly", "eliminated": ["lily"]},
+      {"base": "be", "eliminated": ["bely"]},
+      {"base": "al", "eliminated": ["ally"]},
+      {"base": "id", "eliminated": ["idly"]},
+      {"base": "abrupt", "eliminated": ["abruptly"], "note": "kept base form"},
+      {"base": "absent", "eliminated": ["absently"], "note": "kept base form"},
+      {"base": "absolute", "eliminated": ["absolutely"], "note": "kept base form"}
+    ]
+  },
+  
+  "preserved_semantic_distinctions": {
+    "abstract_nouns_preserved": [
+      {"base": "abandon", "preserved": "abandonment", "reason": "action vs state"},
+      {"base": "real", "preserved": "reality", "reason": "adjective vs concept"},
+      {"base": "human", "preserved": "humanity", "reason": "individual vs collective"},
+      {"base": "solid", "preserved": "solidarity", "reason": "property vs social bond"},
+      {"base": "dense", "preserved": "density", "reason": "quality vs measurement"},
+      {"base": "secure", "preserved": "security", "reason": "state vs system"}
+    ],
+    
+    "professional_roles_preserved": [
+      {"base": "medicine", "preserved": "doctor", "reason": "field vs profession"},
+      {"base": "law", "preserved": "lawyer", "reason": "system vs profession"},
+      {"base": "teach", "preserved": "teacher", "reason": "action vs profession"},
+      {"base": "art", "preserved": "artist", "reason": "medium vs creator"},
+      {"base": "write", "preserved": "writer", "reason": "action vs profession"}
+    ],
+    
+    "emotional_variations_preserved": [
+      {"base": "use", "preserved": ["useful", "useless"], "reason": "positive/negative distinction"},
+      {"base": "hope", "preserved": ["hopeful", "hopeless"], "reason": "optimism/pessimism"},
+      {"base": "care", "preserved": ["careful", "careless"], "reason": "cautious/reckless"},
+      {"base": "harm", "preserved": ["harmful", "harmless"], "reason": "dangerous/safe"}
+    ],
+    
+    "irregular_forms_preserved": [
+      {"base": "good", "preserved": ["better", "best"], "reason": "irregular comparison"},
+      {"base": "person", "preserved": "people", "reason": "irregular plural"},
+      {"base": "child", "preserved": "children", "reason": "irregular plural"}
+    ]
+  },
+  
+  "grammar_context_rules": {
+    "plural_detection": {
+      "determiners": ["many", "several", "few", "some", "all", "these", "those"],
+      "numbers": ["two", "three", "four", "five", "dozen", "hundred"],
+      "plural_verbs": ["are", "were", "have"]
+    },
+    
+    "tense_detection": {
+      "past_indicators": ["yesterday", "ago", "before", "last", "had", "was", "were"],
+      "future_indicators": ["will", "shall", "tomorrow", "next", "soon", "going to"],
+      "present_continuous": ["is", "are", "am", "currently", "now"]
+    },
+    
+    "comparative_modifiers": {
+      "comparative": "➕",
+      "superlative": "⭐",
+      "intensity_high": "🔥",
+      "intensity_low": "📐"
+    }
+  },
+  
+  "usage_examples": {
+    "plural_context": {
+      "input": "The cats are sleeping",
+      "encoded": "📰 🐱 🅰️ 😴",
+      "context_applied": "plural detected from 'are' → cats understood",
+      "decoded": "The cats are sleeping"
+    },
+    
+    "tense_context": {
+      "input": "He ran quickly yesterday",
+      "encoded": "👨 🏃 ⚡ 🕐",
+      "context_applied": "past tense from 'yesterday' → ran understood",
+      "decoded": "He ran quickly yesterday"
+    },
+    
+    "comparative_context": {
+      "input": "This car is faster than that one",
+      "encoded": "🔁 🚗 🅰️ ⚡➕ 🤏 👆 ☝️",
+      "context_applied": "'than' triggers comparative → faster understood",
+      "decoded": "This car is faster than that one"
+    }
+  }
+}

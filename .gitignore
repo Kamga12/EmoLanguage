@@ -1,0 +1,9 @@
+#documents/*
+#archive/*
+mappings/*
+logs/*
+#tests/*
+.github/*
+
+__pycache__/
+*.pyc

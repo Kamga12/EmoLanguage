@@ -1,0 +1,14 @@
+{
+  "test_summary": {
+    "total_tests": 100,
+    "passed_tests": 0,
+    "failed_tests": 100,
+    "pass_rate": 0.0,
+    "total_execution_time": 1.4595251083374023,
+    "average_encoding_time": 0.014349777698516846,
+    "average_decoding_time": 0.00021475553512573242,
+    "average_mapping_accuracy": 53.15325507825508
+  },
+  "category_results": {
+    "Basic Communication": [
+      

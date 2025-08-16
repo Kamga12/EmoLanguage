@@ -1,0 +1,1611 @@
+{
+  "rule_compliance": {
+    "total_pairs": 43,
+    "correct_decisions": 35,
+    "incorrect_decisions": 8,
+    "results_by_rule": {
+      "always_eliminate": [
+        {
+          "base": "cat",
+          "transformed": "cats",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "cat",
+          "normalized_transformed": "cat",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "dog",
+          "transformed": "dogs",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "dog",
+          "normalized_transformed": "dog",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "book",
+          "transformed": "books",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "book",
+          "normalized_transformed": "book",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "house",
+          "transformed": "houses",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "house",
+          "normalized_transformed": "hous",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false,
+          "reasoning": ""
+        },
+        {
+          "base": "walk",
+          "transformed": "walked",
+          "type": "past_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "play",
+          "transformed": "played",
+          "type": "past_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "play",
+          "normalized_transformed": "play",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "work",
+          "transformed": "worked",
+          "type": "past_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "work",
+          "normalized_transformed": "work",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "run",
+          "transformed": "running",
+          "type": "progressive",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "run",
+          "normalized_transformed": "run",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "walk",
+          "transformed": "walking",
+          "type": "progressive",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "think",
+          "transformed": "thinking",
+          "type": "progressive",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "think",
+          "normalized_transformed": "think",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "run",
+          "transformed": "runs",
+          "type": "third_person",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "run",
+          "normalized_transformed": "run",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "walk",
+          "transformed": "walks",
+          "type": "third_person",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "think",
+          "transformed": "thinks",
+          "type": "third_person",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "think",
+          "normalized_transformed": "think",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        }
+      ],
+      "case_by_case": [
+        {
+          "base": "child",
+          "transformed": "children",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "child",
+          "normalized_transformed": "child",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Different connotations - collective vs individual"
+        },
+        {
+          "base": "person",
+          "transformed": "people",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "person",
+          "normalized_transformed": "person",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Collective meaning vs individual"
+        },
+        {
+          "base": "foot",
+          "transformed": "feet",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "foot",
+          "normalized_transformed": "foot",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same core concept"
+        },
+        {
+          "base": "mouse",
+          "transformed": "mice",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "mouse",
+          "normalized_transformed": "mouse",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same core concept"
+        },
+        {
+          "base": "quick",
+          "transformed": "quickly",
+          "type": "adverb_manner",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "quick",
+          "normalized_transformed": "quickly",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false,
+          "reasoning": "Just manner of being quick"
+        },
+        {
+          "base": "slow",
+          "transformed": "slowly",
+          "type": "adverb_manner",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "slow",
+          "normalized_transformed": "slowly",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false,
+          "reasoning": "Just manner of being slow"
+        },
+        {
+          "base": "hard",
+          "transformed": "hardly",
+          "type": "adverb_semantic_shift",
+          "rule": "case_by_case",
+          "semantic_impact": "high",
+          "normalized_base": "hard",
+          "normalized_transformed": "hardly",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Completely different meaning"
+        },
+        {
+          "base": "late",
+          "transformed": "lately",
+          "type": "adverb_semantic_shift",
+          "rule": "case_by_case",
+          "semantic_impact": "high",
+          "normalized_base": "late",
+          "normalized_transformed": "lately",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Temporal vs descriptive meaning"
+        },
+        {
+          "base": "big",
+          "transformed": "bigger",
+          "type": "comparative",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "big",
+          "normalized_transformed": "big",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Degree information can be captured elsewhere"
+        },
+        {
+          "base": "fast",
+          "transformed": "fastest",
+          "type": "superlative",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "fast",
+          "normalized_transformed": "fast",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Degree information can be captured elsewhere"
+        },
+        {
+          "base": "good",
+          "transformed": "better",
+          "type": "irregular_comparative",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "good",
+          "normalized_transformed": "good",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Lexicalized form with distinct usage"
+        },
+        {
+          "base": "good",
+          "transformed": "best",
+          "type": "irregular_superlative",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "good",
+          "normalized_transformed": "good",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Lexicalized form with distinct usage"
+        }
+      ],
+      "always_preserve": [
+        {
+          "base": "happy",
+          "transformed": "unhappy",
+          "type": "negation_prefix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "happy",
+          "normalized_transformed": "unhappy",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "possible",
+          "transformed": "impossible",
+          "type": "negation_prefix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "possible",
+          "normalized_transformed": "impossible",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "legal",
+          "transformed": "illegal",
+          "type": "negation_prefix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "legal",
+          "normalized_transformed": "illegal",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "hope",
+          "transformed": "hopeless",
+          "type": "negation_suffix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "hope",
+          "normalized_transformed": "hopeless",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "teach",
+          "transformed": "teacher",
+          "type": "agent_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "teach",
+          "normalized_transformed": "teach",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Person who teaches vs action"
+        },
+        {
+          "base": "write",
+          "transformed": "writer",
+          "type": "agent_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "write",
+          "normalized_transformed": "writ",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Person vs action"
+        },
+        {
+          "base": "piano",
+          "transformed": "pianist",
+          "type": "agent_specialist",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "piano",
+          "normalized_transformed": "pianist",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Person vs instrument"
+        },
+        {
+          "base": "library",
+          "transformed": "librarian",
+          "type": "agent_specialist",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "library",
+          "normalized_transformed": "librarian",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Person vs place"
+        },
+        {
+          "base": "happy",
+          "transformed": "happiness",
+          "type": "quality_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "happy",
+          "normalized_transformed": "happiness",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "State vs quality distinction"
+        },
+        {
+          "base": "complex",
+          "transformed": "complexity",
+          "type": "quality_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "complex",
+          "normalized_transformed": "complexity",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Abstract concept vs adjective"
+        },
+        {
+          "base": "move",
+          "transformed": "movement",
+          "type": "action_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "move",
+          "normalized_transformed": "movement",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Concept vs action"
+        },
+        {
+          "base": "create",
+          "transformed": "creation",
+          "type": "action_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "create",
+          "normalized_transformed": "creation",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Result vs action"
+        }
+      ],
+      "special_case": [
+        {
+          "base": "happy",
+          "transformed": "unhappiness",
+          "type": "compound_transform",
+          "rule": "special_case",
+          "semantic_impact": "high",
+          "normalized_base": "happy",
+          "normalized_transformed": "unhappiness",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Both negation and state transformation preserved"
+        },
+        {
+          "base": "care",
+          "transformed": "uncaring",
+          "type": "compound_transform",
+          "rule": "special_case",
+          "semantic_impact": "high",
+          "normalized_base": "care",
+          "normalized_transformed": "uncar",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Negation of agent-like adjective"
+        }
+      ],
+      "context_dependent": [
+        {
+          "base": "bank",
+          "transformed": "banks",
+          "type": "homonym_plural",
+          "rule": "context_dependent",
+          "semantic_impact": "low",
+          "normalized_base": "bank",
+          "normalized_transformed": "bank",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same for both river bank and financial bank"
+        },
+        {
+          "base": "bear",
+          "transformed": "bears",
+          "type": "homonym_plural",
+          "rule": "context_dependent",
+          "semantic_impact": "low",
+          "normalized_base": "bear",
+          "normalized_transformed": "bear",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same for both animal and verb meanings"
+        }
+      ],
+      "domain_specific": [
+        {
+          "base": "datum",
+          "transformed": "data",
+          "type": "technical_plural",
+          "rule": "domain_specific",
+          "semantic_impact": "medium",
+          "normalized_base": "datum",
+          "normalized_transformed": "data",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Plural is standard form in common usage"
+        },
+        {
+          "base": "formula",
+          "transformed": "formulas",
+          "type": "technical_plural",
+          "rule": "domain_specific",
+          "semantic_impact": "low",
+          "normalized_base": "formula",
+          "normalized_transformed": "formula",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Regular plural pattern"
+        }
+      ]
+    },
+    "results_by_impact": {
+      "low": [
+        {
+          "base": "cat",
+          "transformed": "cats",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "cat",
+          "normalized_transformed": "cat",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "dog",
+          "transformed": "dogs",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "dog",
+          "normalized_transformed": "dog",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "book",
+          "transformed": "books",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "book",
+          "normalized_transformed": "book",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "house",
+          "transformed": "houses",
+          "type": "plural_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "house",
+          "normalized_transformed": "hous",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false,
+          "reasoning": ""
+        },
+        {
+          "base": "walk",
+          "transformed": "walked",
+          "type": "past_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "play",
+          "transformed": "played",
+          "type": "past_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "play",
+          "normalized_transformed": "play",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "work",
+          "transformed": "worked",
+          "type": "past_regular",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "work",
+          "normalized_transformed": "work",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "run",
+          "transformed": "running",
+          "type": "progressive",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "run",
+          "normalized_transformed": "run",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "walk",
+          "transformed": "walking",
+          "type": "progressive",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "think",
+          "transformed": "thinking",
+          "type": "progressive",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "think",
+          "normalized_transformed": "think",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "run",
+          "transformed": "runs",
+          "type": "third_person",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "run",
+          "normalized_transformed": "run",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "walk",
+          "transformed": "walks",
+          "type": "third_person",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "think",
+          "transformed": "thinks",
+          "type": "third_person",
+          "rule": "always_eliminate",
+          "semantic_impact": "low",
+          "normalized_base": "think",
+          "normalized_transformed": "think",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": ""
+        },
+        {
+          "base": "foot",
+          "transformed": "feet",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "foot",
+          "normalized_transformed": "foot",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same core concept"
+        },
+        {
+          "base": "mouse",
+          "transformed": "mice",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "mouse",
+          "normalized_transformed": "mouse",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same core concept"
+        },
+        {
+          "base": "quick",
+          "transformed": "quickly",
+          "type": "adverb_manner",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "quick",
+          "normalized_transformed": "quickly",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false,
+          "reasoning": "Just manner of being quick"
+        },
+        {
+          "base": "slow",
+          "transformed": "slowly",
+          "type": "adverb_manner",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "slow",
+          "normalized_transformed": "slowly",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false,
+          "reasoning": "Just manner of being slow"
+        },
+        {
+          "base": "big",
+          "transformed": "bigger",
+          "type": "comparative",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "big",
+          "normalized_transformed": "big",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Degree information can be captured elsewhere"
+        },
+        {
+          "base": "fast",
+          "transformed": "fastest",
+          "type": "superlative",
+          "rule": "case_by_case",
+          "semantic_impact": "low",
+          "normalized_base": "fast",
+          "normalized_transformed": "fast",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Degree information can be captured elsewhere"
+        },
+        {
+          "base": "bank",
+          "transformed": "banks",
+          "type": "homonym_plural",
+          "rule": "context_dependent",
+          "semantic_impact": "low",
+          "normalized_base": "bank",
+          "normalized_transformed": "bank",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same for both river bank and financial bank"
+        },
+        {
+          "base": "bear",
+          "transformed": "bears",
+          "type": "homonym_plural",
+          "rule": "context_dependent",
+          "semantic_impact": "low",
+          "normalized_base": "bear",
+          "normalized_transformed": "bear",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Same for both animal and verb meanings"
+        },
+        {
+          "base": "formula",
+          "transformed": "formulas",
+          "type": "technical_plural",
+          "rule": "domain_specific",
+          "semantic_impact": "low",
+          "normalized_base": "formula",
+          "normalized_transformed": "formula",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true,
+          "reasoning": "Regular plural pattern"
+        }
+      ],
+      "medium": [
+        {
+          "base": "child",
+          "transformed": "children",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "child",
+          "normalized_transformed": "child",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Different connotations - collective vs individual"
+        },
+        {
+          "base": "person",
+          "transformed": "people",
+          "type": "plural_irregular",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "person",
+          "normalized_transformed": "person",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Collective meaning vs individual"
+        },
+        {
+          "base": "good",
+          "transformed": "better",
+          "type": "irregular_comparative",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "good",
+          "normalized_transformed": "good",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Lexicalized form with distinct usage"
+        },
+        {
+          "base": "good",
+          "transformed": "best",
+          "type": "irregular_superlative",
+          "rule": "case_by_case",
+          "semantic_impact": "medium",
+          "normalized_base": "good",
+          "normalized_transformed": "good",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Lexicalized form with distinct usage"
+        },
+        {
+          "base": "datum",
+          "transformed": "data",
+          "type": "technical_plural",
+          "rule": "domain_specific",
+          "semantic_impact": "medium",
+          "normalized_base": "datum",
+          "normalized_transformed": "data",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Plural is standard form in common usage"
+        }
+      ],
+      "high": [
+        {
+          "base": "hard",
+          "transformed": "hardly",
+          "type": "adverb_semantic_shift",
+          "rule": "case_by_case",
+          "semantic_impact": "high",
+          "normalized_base": "hard",
+          "normalized_transformed": "hardly",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Completely different meaning"
+        },
+        {
+          "base": "late",
+          "transformed": "lately",
+          "type": "adverb_semantic_shift",
+          "rule": "case_by_case",
+          "semantic_impact": "high",
+          "normalized_base": "late",
+          "normalized_transformed": "lately",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Temporal vs descriptive meaning"
+        },
+        {
+          "base": "happy",
+          "transformed": "unhappy",
+          "type": "negation_prefix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "happy",
+          "normalized_transformed": "unhappy",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "possible",
+          "transformed": "impossible",
+          "type": "negation_prefix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "possible",
+          "normalized_transformed": "impossible",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "legal",
+          "transformed": "illegal",
+          "type": "negation_prefix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "legal",
+          "normalized_transformed": "illegal",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "hope",
+          "transformed": "hopeless",
+          "type": "negation_suffix",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "hope",
+          "normalized_transformed": "hopeless",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Creates antonym with distinct meaning"
+        },
+        {
+          "base": "teach",
+          "transformed": "teacher",
+          "type": "agent_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "teach",
+          "normalized_transformed": "teach",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false,
+          "reasoning": "Person who teaches vs action"
+        },
+        {
+          "base": "write",
+          "transformed": "writer",
+          "type": "agent_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "write",
+          "normalized_transformed": "writ",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Person vs action"
+        },
+        {
+          "base": "piano",
+          "transformed": "pianist",
+          "type": "agent_specialist",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "piano",
+          "normalized_transformed": "pianist",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Person vs instrument"
+        },
+        {
+          "base": "library",
+          "transformed": "librarian",
+          "type": "agent_specialist",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "library",
+          "normalized_transformed": "librarian",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Person vs place"
+        },
+        {
+          "base": "happy",
+          "transformed": "happiness",
+          "type": "quality_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "happy",
+          "normalized_transformed": "happiness",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "State vs quality distinction"
+        },
+        {
+          "base": "complex",
+          "transformed": "complexity",
+          "type": "quality_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "complex",
+          "normalized_transformed": "complexity",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Abstract concept vs adjective"
+        },
+        {
+          "base": "move",
+          "transformed": "movement",
+          "type": "action_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "move",
+          "normalized_transformed": "movement",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Concept vs action"
+        },
+        {
+          "base": "create",
+          "transformed": "creation",
+          "type": "action_noun",
+          "rule": "always_preserve",
+          "semantic_impact": "high",
+          "normalized_base": "create",
+          "normalized_transformed": "creation",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Result vs action"
+        },
+        {
+          "base": "happy",
+          "transformed": "unhappiness",
+          "type": "compound_transform",
+          "rule": "special_case",
+          "semantic_impact": "high",
+          "normalized_base": "happy",
+          "normalized_transformed": "unhappiness",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Both negation and state transformation preserved"
+        },
+        {
+          "base": "care",
+          "transformed": "uncaring",
+          "type": "compound_transform",
+          "rule": "special_case",
+          "semantic_impact": "high",
+          "normalized_base": "care",
+          "normalized_transformed": "uncar",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true,
+          "reasoning": "Negation of agent-like adjective"
+        }
+      ]
+    },
+    "incorrect_examples": [
+      {
+        "base": "house",
+        "transformed": "houses",
+        "type": "plural_regular",
+        "rule": "always_eliminate",
+        "semantic_impact": "low",
+        "normalized_base": "house",
+        "normalized_transformed": "hous",
+        "was_normalized": false,
+        "should_normalize": true,
+        "correct_decision": false,
+        "reasoning": ""
+      },
+      {
+        "base": "child",
+        "transformed": "children",
+        "type": "plural_irregular",
+        "rule": "case_by_case",
+        "semantic_impact": "medium",
+        "normalized_base": "child",
+        "normalized_transformed": "child",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false,
+        "reasoning": "Different connotations - collective vs individual"
+      },
+      {
+        "base": "person",
+        "transformed": "people",
+        "type": "plural_irregular",
+        "rule": "case_by_case",
+        "semantic_impact": "medium",
+        "normalized_base": "person",
+        "normalized_transformed": "person",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false,
+        "reasoning": "Collective meaning vs individual"
+      },
+      {
+        "base": "quick",
+        "transformed": "quickly",
+        "type": "adverb_manner",
+        "rule": "case_by_case",
+        "semantic_impact": "low",
+        "normalized_base": "quick",
+        "normalized_transformed": "quickly",
+        "was_normalized": false,
+        "should_normalize": true,
+        "correct_decision": false,
+        "reasoning": "Just manner of being quick"
+      },
+      {
+        "base": "slow",
+        "transformed": "slowly",
+        "type": "adverb_manner",
+        "rule": "case_by_case",
+        "semantic_impact": "low",
+        "normalized_base": "slow",
+        "normalized_transformed": "slowly",
+        "was_normalized": false,
+        "should_normalize": true,
+        "correct_decision": false,
+        "reasoning": "Just manner of being slow"
+      },
+      {
+        "base": "good",
+        "transformed": "better",
+        "type": "irregular_comparative",
+        "rule": "case_by_case",
+        "semantic_impact": "medium",
+        "normalized_base": "good",
+        "normalized_transformed": "good",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false,
+        "reasoning": "Lexicalized form with distinct usage"
+      },
+      {
+        "base": "good",
+        "transformed": "best",
+        "type": "irregular_superlative",
+        "rule": "case_by_case",
+        "semantic_impact": "medium",
+        "normalized_base": "good",
+        "normalized_transformed": "good",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false,
+        "reasoning": "Lexicalized form with distinct usage"
+      },
+      {
+        "base": "teach",
+        "transformed": "teacher",
+        "type": "agent_noun",
+        "rule": "always_preserve",
+        "semantic_impact": "high",
+        "normalized_base": "teach",
+        "normalized_transformed": "teach",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false,
+        "reasoning": "Person who teaches vs action"
+      }
+    ],
+    "accuracy_by_rule": {
+      "always_eliminate": {
+        "correct": 12,
+        "total": 13,
+        "accuracy": 92.3076923076923
+      },
+      "case_by_case": {
+        "correct": 6,
+        "total": 12,
+        "accuracy": 50.0
+      },
+      "always_preserve": {
+        "correct": 11,
+        "total": 12,
+        "accuracy": 91.66666666666666
+      },
+      "special_case": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 100.0
+      },
+      "context_dependent": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 100.0
+      },
+      "domain_specific": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 100.0
+      }
+    },
+    "accuracy_by_impact": {
+      "low": {
+        "correct": 19,
+        "total": 22,
+        "accuracy": 86.36363636363636
+      },
+      "medium": {
+        "correct": 1,
+        "total": 5,
+        "accuracy": 20.0
+      },
+      "high": {
+        "correct": 15,
+        "total": 16,
+        "accuracy": 93.75
+      }
+    },
+    "overall_accuracy": 81.3953488372093
+  },
+  "edge_cases": {
+    "total_cases": 16,
+    "correct_normalizations": 6,
+    "incorrect_normalizations": 10,
+    "case_results": [
+      {
+        "word": "news",
+        "expected": "news",
+        "actual": "new",
+        "correct": false,
+        "reason": "Always plural, no singular form"
+      },
+      {
+        "word": "scissors",
+        "expected": "scissors",
+        "actual": "scissor",
+        "correct": false,
+        "reason": "Always plural tool"
+      },
+      {
+        "word": "pants",
+        "expected": "pants",
+        "actual": "pant",
+        "correct": false,
+        "reason": "Always plural clothing"
+      },
+      {
+        "word": "glasses",
+        "expected": "glasses",
+        "actual": "glass",
+        "correct": false,
+        "reason": "Ambiguous - eyewear vs drinking vessel"
+      },
+      {
+        "word": "better",
+        "expected": "better",
+        "actual": "good",
+        "correct": false,
+        "reason": "Lexicalized comparative"
+      },
+      {
+        "word": "best",
+        "expected": "best",
+        "actual": "good",
+        "correct": false,
+        "reason": "Lexicalized superlative"
+      },
+      {
+        "word": "worse",
+        "expected": "worse",
+        "actual": "bad",
+        "correct": false,
+        "reason": "Lexicalized comparative"
+      },
+      {
+        "word": "worst",
+        "expected": "worst",
+        "actual": "bad",
+        "correct": false,
+        "reason": "Lexicalized superlative"
+      },
+      {
+        "word": "analysis",
+        "expected": "analysis",
+        "actual": "analysis",
+        "correct": true,
+        "reason": "Technical term"
+      },
+      {
+        "word": "analyses",
+        "expected": "analysis",
+        "actual": "analys",
+        "correct": false,
+        "reason": "Irregular plural of analysis"
+      },
+      {
+        "word": "hypothesis",
+        "expected": "hypothesis",
+        "actual": "hypothesis",
+        "correct": true,
+        "reason": "Technical term"
+      },
+      {
+        "word": "hypotheses",
+        "expected": "hypothesis",
+        "actual": "hypothes",
+        "correct": false,
+        "reason": "Irregular plural"
+      },
+      {
+        "word": "went",
+        "expected": "go",
+        "actual": "go",
+        "correct": true,
+        "reason": "Irregular past tense"
+      },
+      {
+        "word": "came",
+        "expected": "come",
+        "actual": "come",
+        "correct": true,
+        "reason": "Irregular past tense"
+      },
+      {
+        "word": "saw",
+        "expected": "see",
+        "actual": "see",
+        "correct": true,
+        "reason": "Irregular past tense"
+      },
+      {
+        "word": "thought",
+        "expected": "think",
+        "actual": "think",
+        "correct": true,
+        "reason": "Irregular past tense"
+      }
+    ],
+    "accuracy": 37.5
+  },
+  "semantic_scenarios": {
+    "total_scenarios": 4,
+    "scenario_results": [
+      {
+        "scenario": "Professional roles should remain distinct from actions",
+        "expected_behavior": "preserve_distinct",
+        "accuracy": 40.0,
+        "correct_pairs": 2,
+        "total_pairs": 5,
+        "pair_results": [
+          {
+            "base": "teach",
+            "transformed": "teacher",
+            "normalized_base": "teach",
+            "normalized_transformed": "teach",
+            "correct": false
+          },
+          {
+            "base": "write",
+            "transformed": "writer",
+            "normalized_base": "write",
+            "normalized_transformed": "writ",
+            "correct": true
+          },
+          {
+            "base": "paint",
+            "transformed": "painter",
+            "normalized_base": "paint",
+            "normalized_transformed": "paint",
+            "correct": false
+          },
+          {
+            "base": "manage",
+            "transformed": "manager",
+            "normalized_base": "manage",
+            "normalized_transformed": "manag",
+            "correct": true
+          },
+          {
+            "base": "develop",
+            "transformed": "developer",
+            "normalized_base": "develop",
+            "normalized_transformed": "develop",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "scenario": "Negations should remain distinct from base words",
+        "expected_behavior": "preserve_distinct",
+        "accuracy": 100.0,
+        "correct_pairs": 5,
+        "total_pairs": 5,
+        "pair_results": [
+          {
+            "base": "happy",
+            "transformed": "unhappy",
+            "normalized_base": "happy",
+            "normalized_transformed": "unhappy",
+            "correct": true
+          },
+          {
+            "base": "able",
+            "transformed": "unable",
+            "normalized_base": "able",
+            "normalized_transformed": "unable",
+            "correct": true
+          },
+          {
+            "base": "fair",
+            "transformed": "unfair",
+            "normalized_base": "fair",
+            "normalized_transformed": "unfair",
+            "correct": true
+          },
+          {
+            "base": "kind",
+            "transformed": "unkind",
+            "normalized_base": "kind",
+            "normalized_transformed": "unkind",
+            "correct": true
+          },
+          {
+            "base": "lock",
+            "transformed": "unlock",
+            "normalized_base": "lock",
+            "normalized_transformed": "unlock",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "scenario": "Quality abstractions should remain distinct",
+        "expected_behavior": "preserve_distinct",
+        "accuracy": 100.0,
+        "correct_pairs": 5,
+        "total_pairs": 5,
+        "pair_results": [
+          {
+            "base": "beautiful",
+            "transformed": "beauty",
+            "normalized_base": "beautiful",
+            "normalized_transformed": "beauty",
+            "correct": true
+          },
+          {
+            "base": "strong",
+            "transformed": "strength",
+            "normalized_base": "strong",
+            "normalized_transformed": "strength",
+            "correct": true
+          },
+          {
+            "base": "wise",
+            "transformed": "wisdom",
+            "normalized_base": "wise",
+            "normalized_transformed": "wisdom",
+            "correct": true
+          },
+          {
+            "base": "true",
+            "transformed": "truth",
+            "normalized_base": "true",
+            "normalized_transformed": "truth",
+            "correct": true
+          },
+          {
+            "base": "deep",
+            "transformed": "depth",
+            "normalized_base": "deep",
+            "normalized_transformed": "depth",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "scenario": "Regular inflections should normalize",
+        "expected_behavior": "normalize_same",
+        "accuracy": 80.0,
+        "correct_pairs": 4,
+        "total_pairs": 5,
+        "pair_results": [
+          {
+            "base": "cat",
+            "transformed": "cats",
+            "normalized_base": "cat",
+            "normalized_transformed": "cat",
+            "correct": true
+          },
+          {
+            "base": "run",
+            "transformed": "running",
+            "normalized_base": "run",
+            "normalized_transformed": "run",
+            "correct": true
+          },
+          {
+            "base": "walk",
+            "transformed": "walked",
+            "normalized_base": "walk",
+            "normalized_transformed": "walk",
+            "correct": true
+          },
+          {
+            "base": "quick",
+            "transformed": "quickly",
+            "normalized_base": "quick",
+            "normalized_transformed": "quickly",
+            "correct": false
+          },
+          {
+            "base": "big",
+            "transformed": "bigger",
+            "normalized_base": "big",
+            "normalized_transformed": "big",
+            "correct": true
+          }
+        ]
+      }
+    ],
+    "overall_accuracy": 80.0
+  },
+  "summary": {
+    "rule_accuracy": 81.3953488372093,
+    "edge_accuracy": 37.5,
+    "scenario_accuracy": 80.0,
+    "overall_average": 66.2984496124031
+  }
+}

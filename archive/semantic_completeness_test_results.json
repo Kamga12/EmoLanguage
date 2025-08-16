@@ -1,0 +1,1146 @@
+{
+  "encoding_accuracy": {
+    "total_tests": 20,
+    "perfect_matches": 0,
+    "semantic_matches": 0,
+    "failures": 20,
+    "detailed_results": [
+      {
+        "original": "The cat sits on the mat.",
+        "encoded": "🧨🔴 🐱 🪑 📺🔴 🧨🔴 🧻.",
+        "decoded": "the tom desk on the wipe .",
+        "category": "basic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Simple present tense with common nouns"
+      },
+      {
+        "original": "Dogs bark loudly at strangers.",
+        "encoded": "🐶 🐶 🔊 🎯🔴 👤❓.",
+        "decoded": "doggie doggie voice for strang .",
+        "category": "basic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Plural nouns with adverb"
+      },
+      {
+        "original": "She walks quickly to work.",
+        "encoded": "👧🔴 🚶‍♂️🚶‍♀️ ⚡️ ➡️🔴 💼🔴.",
+        "decoded": "she walk peppy to work .",
+        "category": "basic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Third person singular with adverb"
+      },
+      {
+        "original": "The children played in the park yesterday.",
+        "encoded": "🧨🔴 🧒 🎮 📥🔴 🧨🔴 🏞️ ⏰📅.",
+        "decoded": "the youth gam in the val yesterday .",
+        "category": "temporal",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Past tense with irregular plural"
+      },
+      {
+        "original": "He is running faster than before.",
+        "encoded": "👦🔴 🧑‍🏫🔴 🏃‍♂️ ⚡ 📏🔴 ⏪.",
+        "decoded": "he is gangly joul than before .",
+        "category": "temporal",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Progressive tense with comparative"
+      },
+      {
+        "original": "They have been working all day.",
+        "encoded": "👬🔴 👍🔴 ⚡🔴 💼🔴 🌐🔴 🌅🔴.",
+        "decoded": "they should must work all day .",
+        "category": "temporal",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Perfect progressive tense"
+      },
+      {
+        "original": "The biggest dog runs fastest.",
+        "encoded": "🧨🔴 🐘 🐶 🏃‍♂️ ⚡.",
+        "decoded": "the huge doggie gangly joul .",
+        "category": "inflection",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Superlatives and third person singular"
+      },
+      {
+        "original": "Books contain interesting stories.",
+        "encoded": "📚 📦🛡️ 🤔 📖.",
+        "decoded": "genera contain kinda bibl .",
+        "category": "inflection",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Plural nouns with present tense"
+      },
+      {
+        "original": "The teacher teaches students daily.",
+        "encoded": "🧨🔴 👩‍🏫 👩‍🏫 🎓 📅.",
+        "decoded": "the civy civy degree today .",
+        "category": "inflection",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Agent noun with verb form"
+      },
+      {
+        "original": "The happy child smiled joyfully.",
+        "encoded": "🧨🔴 😊 🧒 😊 🎉.",
+        "decoded": "the dimple youth dimple galore .",
+        "category": "semantic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Emotion words with manner adverb"
+      },
+      {
+        "original": "Unhappy people feel sadness deeply.",
+        "encoded": "😞 👥🔴 🤗 😢 🌊💧.",
+        "decoded": "dismal person hue droopy deeply .",
+        "category": "semantic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Negation and emotion states"
+      },
+      {
+        "original": "Teachers love teaching hopeful students.",
+        "encoded": "👩‍🏫 ❤️ 👩‍🏫 🤞 🎓.",
+        "decoded": "civy angina civy betcha degree .",
+        "category": "semantic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Agent nouns vs. action verbs"
+      },
+      {
+        "original": "The better solution works better.",
+        "encoded": "🧨🔴 better 💡 💼🔴 better.",
+        "decoded": "the better advice work better.",
+        "category": "ambiguity",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Comparative as noun vs. adverb"
+      },
+      {
+        "original": "Children love playing with children.",
+        "encoded": "🧒 ❤️ 🎮 🤝🔴 🧒.",
+        "decoded": "youth angina gam with youth .",
+        "category": "ambiguity",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Repeated irregular plurals"
+      },
+      {
+        "original": "Running quickly, he runs daily.",
+        "encoded": "🏃‍♂️ ⚡️, 👦🔴 🏃‍♂️ 📅.",
+        "decoded": "gangly peppy , he gangly today .",
+        "category": "ambiguity",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Gerund vs. verb forms"
+      },
+      {
+        "original": "The fastest runners were running their best races.",
+        "encoded": "🧨🔴 ⚡ 🏃‍♂️ ⚡🔴 🏃‍♂️ 👥👥🔴 🏆 🏁.",
+        "decoded": "the joul gangly must gangly their chosen race .",
+        "category": "complex",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Multiple tenses, superlatives, and progressives"
+      },
+      {
+        "original": "Unhappy teachers rarely teach effectively.",
+        "encoded": "😞 👩‍🏫 ❓📉 👩‍🏫 ✅.",
+        "decoded": "dismal civy rarely civy doable .",
+        "category": "complex",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Negation, adverbs, and agent nouns"
+      },
+      {
+        "original": "The children's books were carefully organized.",
+        "encoded": "🧨🔴 🧒's 📚 ⚡🔴 🛡️ 📂✅.",
+        "decoded": "the youth 's genera must squire organiz .",
+        "category": "complex",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Possessives, plurals, and adverbs"
+      },
+      {
+        "original": "The algorithm processes data efficiently.",
+        "encoded": "🧨🔴 🤖 ⚙️ 💾 🤝🌍.",
+        "decoded": "the bionic kilocycle save togeth .",
+        "category": "technical",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Technical terms with manner adverb"
+      },
+      {
+        "original": "Computers enable faster communication.",
+        "encoded": "💻➗ 🔓⚙️ ⚡ 💬.",
+        "decoded": "comput enable joul bani .",
+        "category": "technical",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Technology and comparative terms"
+      }
+    ],
+    "failure_examples": [
+      {
+        "original": "The cat sits on the mat.",
+        "encoded": "🧨🔴 🐱 🪑 📺🔴 🧨🔴 🧻.",
+        "decoded": "the tom desk on the wipe .",
+        "category": "basic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Simple present tense with common nouns"
+      },
+      {
+        "original": "Dogs bark loudly at strangers.",
+        "encoded": "🐶 🐶 🔊 🎯🔴 👤❓.",
+        "decoded": "doggie doggie voice for strang .",
+        "category": "basic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Plural nouns with adverb"
+      },
+      {
+        "original": "She walks quickly to work.",
+        "encoded": "👧🔴 🚶‍♂️🚶‍♀️ ⚡️ ➡️🔴 💼🔴.",
+        "decoded": "she walk peppy to work .",
+        "category": "basic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Third person singular with adverb"
+      },
+      {
+        "original": "The children played in the park yesterday.",
+        "encoded": "🧨🔴 🧒 🎮 📥🔴 🧨🔴 🏞️ ⏰📅.",
+        "decoded": "the youth gam in the val yesterday .",
+        "category": "temporal",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Past tense with irregular plural"
+      },
+      {
+        "original": "He is running faster than before.",
+        "encoded": "👦🔴 🧑‍🏫🔴 🏃‍♂️ ⚡ 📏🔴 ⏪.",
+        "decoded": "he is gangly joul than before .",
+        "category": "temporal",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Progressive tense with comparative"
+      },
+      {
+        "original": "They have been working all day.",
+        "encoded": "👬🔴 👍🔴 ⚡🔴 💼🔴 🌐🔴 🌅🔴.",
+        "decoded": "they should must work all day .",
+        "category": "temporal",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Perfect progressive tense"
+      },
+      {
+        "original": "The biggest dog runs fastest.",
+        "encoded": "🧨🔴 🐘 🐶 🏃‍♂️ ⚡.",
+        "decoded": "the huge doggie gangly joul .",
+        "category": "inflection",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Superlatives and third person singular"
+      },
+      {
+        "original": "Books contain interesting stories.",
+        "encoded": "📚 📦🛡️ 🤔 📖.",
+        "decoded": "genera contain kinda bibl .",
+        "category": "inflection",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Plural nouns with present tense"
+      },
+      {
+        "original": "The teacher teaches students daily.",
+        "encoded": "🧨🔴 👩‍🏫 👩‍🏫 🎓 📅.",
+        "decoded": "the civy civy degree today .",
+        "category": "inflection",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Agent noun with verb form"
+      },
+      {
+        "original": "The happy child smiled joyfully.",
+        "encoded": "🧨🔴 😊 🧒 😊 🎉.",
+        "decoded": "the dimple youth dimple galore .",
+        "category": "semantic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Emotion words with manner adverb"
+      },
+      {
+        "original": "Unhappy people feel sadness deeply.",
+        "encoded": "😞 👥🔴 🤗 😢 🌊💧.",
+        "decoded": "dismal person hue droopy deeply .",
+        "category": "semantic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Negation and emotion states"
+      },
+      {
+        "original": "Teachers love teaching hopeful students.",
+        "encoded": "👩‍🏫 ❤️ 👩‍🏫 🤞 🎓.",
+        "decoded": "civy angina civy betcha degree .",
+        "category": "semantic",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Agent nouns vs. action verbs"
+      },
+      {
+        "original": "The better solution works better.",
+        "encoded": "🧨🔴 better 💡 💼🔴 better.",
+        "decoded": "the better advice work better.",
+        "category": "ambiguity",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Comparative as noun vs. adverb"
+      },
+      {
+        "original": "Children love playing with children.",
+        "encoded": "🧒 ❤️ 🎮 🤝🔴 🧒.",
+        "decoded": "youth angina gam with youth .",
+        "category": "ambiguity",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Repeated irregular plurals"
+      },
+      {
+        "original": "Running quickly, he runs daily.",
+        "encoded": "🏃‍♂️ ⚡️, 👦🔴 🏃‍♂️ 📅.",
+        "decoded": "gangly peppy , he gangly today .",
+        "category": "ambiguity",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Gerund vs. verb forms"
+      },
+      {
+        "original": "The fastest runners were running their best races.",
+        "encoded": "🧨🔴 ⚡ 🏃‍♂️ ⚡🔴 🏃‍♂️ 👥👥🔴 🏆 🏁.",
+        "decoded": "the joul gangly must gangly their chosen race .",
+        "category": "complex",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Multiple tenses, superlatives, and progressives"
+      },
+      {
+        "original": "Unhappy teachers rarely teach effectively.",
+        "encoded": "😞 👩‍🏫 ❓📉 👩‍🏫 ✅.",
+        "decoded": "dismal civy rarely civy doable .",
+        "category": "complex",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Negation, adverbs, and agent nouns"
+      },
+      {
+        "original": "The children's books were carefully organized.",
+        "encoded": "🧨🔴 🧒's 📚 ⚡🔴 🛡️ 📂✅.",
+        "decoded": "the youth 's genera must squire organiz .",
+        "category": "complex",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Possessives, plurals, and adverbs"
+      },
+      {
+        "original": "The algorithm processes data efficiently.",
+        "encoded": "🧨🔴 🤖 ⚙️ 💾 🤝🌍.",
+        "decoded": "the bionic kilocycle save togeth .",
+        "category": "technical",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Technical terms with manner adverb"
+      },
+      {
+        "original": "Computers enable faster communication.",
+        "encoded": "💻➗ 🔓⚙️ ⚡ 💬.",
+        "decoded": "comput enable joul bani .",
+        "category": "technical",
+        "perfect_match": false,
+        "semantic_match": false,
+        "description": "Technology and comparative terms"
+      }
+    ],
+    "perfect_accuracy": 0.0,
+    "semantic_accuracy": 0.0,
+    "failure_rate": 100.0
+  },
+  "transformation_preservation": {
+    "total_pairs": 27,
+    "correct_decisions": 22,
+    "incorrect_decisions": 5,
+    "ambiguous_cases": 0,
+    "results_by_type": {
+      "plural_regular": [
+        {
+          "base": "cat",
+          "transformed": "cats",
+          "type": "plural_regular",
+          "normalized_base": "cat",
+          "normalized_transformed": "cat",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        },
+        {
+          "base": "dog",
+          "transformed": "dogs",
+          "type": "plural_regular",
+          "normalized_base": "dog",
+          "normalized_transformed": "dog",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        },
+        {
+          "base": "book",
+          "transformed": "books",
+          "type": "plural_regular",
+          "normalized_base": "book",
+          "normalized_transformed": "book",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "plural_irregular": [
+        {
+          "base": "child",
+          "transformed": "children",
+          "type": "plural_irregular",
+          "normalized_base": "child",
+          "normalized_transformed": "child",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false
+        },
+        {
+          "base": "person",
+          "transformed": "people",
+          "type": "plural_irregular",
+          "normalized_base": "person",
+          "normalized_transformed": "person",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false
+        },
+        {
+          "base": "foot",
+          "transformed": "feet",
+          "type": "plural_irregular",
+          "normalized_base": "foot",
+          "normalized_transformed": "foot",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "past_tense": [
+        {
+          "base": "walk",
+          "transformed": "walked",
+          "type": "past_tense",
+          "normalized_base": "walk",
+          "normalized_transformed": "walk",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "progressive": [
+        {
+          "base": "run",
+          "transformed": "running",
+          "type": "progressive",
+          "normalized_base": "run",
+          "normalized_transformed": "run",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "third_person": [
+        {
+          "base": "play",
+          "transformed": "plays",
+          "type": "third_person",
+          "normalized_base": "play",
+          "normalized_transformed": "play",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "irregular_past": [
+        {
+          "base": "run",
+          "transformed": "ran",
+          "type": "irregular_past",
+          "normalized_base": "run",
+          "normalized_transformed": "run",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        },
+        {
+          "base": "go",
+          "transformed": "went",
+          "type": "irregular_past",
+          "normalized_base": "go",
+          "normalized_transformed": "go",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        },
+        {
+          "base": "be",
+          "transformed": "was",
+          "type": "irregular_past",
+          "normalized_base": "be",
+          "normalized_transformed": "be",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "comparative": [
+        {
+          "base": "big",
+          "transformed": "bigger",
+          "type": "comparative",
+          "normalized_base": "big",
+          "normalized_transformed": "big",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "irregular_comparative": [
+        {
+          "base": "good",
+          "transformed": "better",
+          "type": "irregular_comparative",
+          "normalized_base": "good",
+          "normalized_transformed": "good",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false
+        }
+      ],
+      "superlative": [
+        {
+          "base": "fast",
+          "transformed": "fastest",
+          "type": "superlative",
+          "normalized_base": "fast",
+          "normalized_transformed": "fast",
+          "was_normalized": true,
+          "should_normalize": true,
+          "correct_decision": true
+        }
+      ],
+      "agent_noun": [
+        {
+          "base": "teach",
+          "transformed": "teacher",
+          "type": "agent_noun",
+          "normalized_base": "teach",
+          "normalized_transformed": "teach",
+          "was_normalized": true,
+          "should_normalize": false,
+          "correct_decision": false
+        },
+        {
+          "base": "write",
+          "transformed": "writer",
+          "type": "agent_noun",
+          "normalized_base": "write",
+          "normalized_transformed": "writ",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        },
+        {
+          "base": "piano",
+          "transformed": "pianist",
+          "type": "agent_noun",
+          "normalized_base": "piano",
+          "normalized_transformed": "pianist",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        }
+      ],
+      "negation": [
+        {
+          "base": "happy",
+          "transformed": "unhappy",
+          "type": "negation",
+          "normalized_base": "happy",
+          "normalized_transformed": "unhappy",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        },
+        {
+          "base": "possible",
+          "transformed": "impossible",
+          "type": "negation",
+          "normalized_base": "possible",
+          "normalized_transformed": "impossible",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        },
+        {
+          "base": "legal",
+          "transformed": "illegal",
+          "type": "negation",
+          "normalized_base": "legal",
+          "normalized_transformed": "illegal",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        }
+      ],
+      "quality_noun": [
+        {
+          "base": "happy",
+          "transformed": "happiness",
+          "type": "quality_noun",
+          "normalized_base": "happy",
+          "normalized_transformed": "happiness",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        },
+        {
+          "base": "complex",
+          "transformed": "complexity",
+          "type": "quality_noun",
+          "normalized_base": "complex",
+          "normalized_transformed": "complexity",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        }
+      ],
+      "action_noun": [
+        {
+          "base": "move",
+          "transformed": "movement",
+          "type": "action_noun",
+          "normalized_base": "move",
+          "normalized_transformed": "movement",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        }
+      ],
+      "manner_adverb": [
+        {
+          "base": "quick",
+          "transformed": "quickly",
+          "type": "manner_adverb",
+          "normalized_base": "quick",
+          "normalized_transformed": "quickly",
+          "was_normalized": false,
+          "should_normalize": true,
+          "correct_decision": false
+        }
+      ],
+      "semantic_shift_adverb": [
+        {
+          "base": "hard",
+          "transformed": "hardly",
+          "type": "semantic_shift_adverb",
+          "normalized_base": "hard",
+          "normalized_transformed": "hardly",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        },
+        {
+          "base": "late",
+          "transformed": "lately",
+          "type": "semantic_shift_adverb",
+          "normalized_base": "late",
+          "normalized_transformed": "lately",
+          "was_normalized": false,
+          "should_normalize": false,
+          "correct_decision": true
+        }
+      ]
+    },
+    "incorrect_examples": [
+      {
+        "base": "child",
+        "transformed": "children",
+        "type": "plural_irregular",
+        "normalized_base": "child",
+        "normalized_transformed": "child",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false
+      },
+      {
+        "base": "person",
+        "transformed": "people",
+        "type": "plural_irregular",
+        "normalized_base": "person",
+        "normalized_transformed": "person",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false
+      },
+      {
+        "base": "good",
+        "transformed": "better",
+        "type": "irregular_comparative",
+        "normalized_base": "good",
+        "normalized_transformed": "good",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false
+      },
+      {
+        "base": "teach",
+        "transformed": "teacher",
+        "type": "agent_noun",
+        "normalized_base": "teach",
+        "normalized_transformed": "teach",
+        "was_normalized": true,
+        "should_normalize": false,
+        "correct_decision": false
+      },
+      {
+        "base": "quick",
+        "transformed": "quickly",
+        "type": "manner_adverb",
+        "normalized_base": "quick",
+        "normalized_transformed": "quickly",
+        "was_normalized": false,
+        "should_normalize": true,
+        "correct_decision": false
+      }
+    ],
+    "accuracy_by_type": {
+      "plural_regular": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 100.0
+      },
+      "plural_irregular": {
+        "correct": 1,
+        "total": 3,
+        "accuracy": 33.33333333333333
+      },
+      "past_tense": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 100.0
+      },
+      "progressive": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 100.0
+      },
+      "third_person": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 100.0
+      },
+      "irregular_past": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 100.0
+      },
+      "comparative": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 100.0
+      },
+      "irregular_comparative": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "superlative": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 100.0
+      },
+      "agent_noun": {
+        "correct": 2,
+        "total": 3,
+        "accuracy": 66.66666666666666
+      },
+      "negation": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 100.0
+      },
+      "quality_noun": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 100.0
+      },
+      "action_noun": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 100.0
+      },
+      "manner_adverb": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "semantic_shift_adverb": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 100.0
+      }
+    },
+    "overall_accuracy": 81.48148148148148
+  },
+  "ambiguity_detection": {
+    "total_ambiguous_groups": 0,
+    "high_conflict_groups": 0,
+    "semantic_conflicts": [],
+    "ambiguous_groups": {},
+    "conflict_statistics": {
+      "high_conflict": 0,
+      "medium_conflict": 0,
+      "low_conflict": 0,
+      "total_affected_words": 0
+    }
+  },
+  "emoji_sequence_comparison": {
+    "total_comparisons": 20,
+    "sequence_changes": 0,
+    "length_changes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "complexity_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "detailed_comparisons": [
+      {
+        "original_text": "The cat sits on the mat.",
+        "full_form": "The cat sits on the mat.",
+        "original_encoded": "🧨🔴 🐱 🪑 📺🔴 🧨🔴 🧻.",
+        "full_encoded": "🧨🔴 🐱 🪑 📺🔴 🧨🔴 🧻.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Dogs bark loudly at strangers.",
+        "full_form": "Dogs bark loudly at strangers.",
+        "original_encoded": "🐶 🐶 🔊 🎯🔴 👤❓.",
+        "full_encoded": "🐶 🐶 🔊 🎯🔴 👤❓.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "She walks quickly to work.",
+        "full_form": "She walks quickly to work.",
+        "original_encoded": "👧🔴 🚶‍♂️🚶‍♀️ ⚡️ ➡️🔴 💼🔴.",
+        "full_encoded": "👧🔴 🚶‍♂️🚶‍♀️ ⚡️ ➡️🔴 💼🔴.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The children played in the park yesterday.",
+        "full_form": "The children played in the park yesterday.",
+        "original_encoded": "🧨🔴 🧒 🎮 📥🔴 🧨🔴 🏞️ ⏰📅.",
+        "full_encoded": "🧨🔴 🧒 🎮 📥🔴 🧨🔴 🏞️ ⏰📅.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "He is running faster than before.",
+        "full_form": "He is running faster than before.",
+        "original_encoded": "👦🔴 🧑‍🏫🔴 🏃‍♂️ ⚡ 📏🔴 ⏪.",
+        "full_encoded": "👦🔴 🧑‍🏫🔴 🏃‍♂️ ⚡ 📏🔴 ⏪.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "They have been working all day.",
+        "full_form": "They have been working all day.",
+        "original_encoded": "👬🔴 👍🔴 ⚡🔴 💼🔴 🌐🔴 🌅🔴.",
+        "full_encoded": "👬🔴 👍🔴 ⚡🔴 💼🔴 🌐🔴 🌅🔴.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The biggest dog runs fastest.",
+        "full_form": "The biggest dog runs fastest.",
+        "original_encoded": "🧨🔴 🐘 🐶 🏃‍♂️ ⚡.",
+        "full_encoded": "🧨🔴 🐘 🐶 🏃‍♂️ ⚡.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Books contain interesting stories.",
+        "full_form": "Books contain interesting stories.",
+        "original_encoded": "📚 📦🛡️ 🤔 📖.",
+        "full_encoded": "📚 📦🛡️ 🤔 📖.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The teacher teaches students daily.",
+        "full_form": "The teacher teaches students daily.",
+        "original_encoded": "🧨🔴 👩‍🏫 👩‍🏫 🎓 📅.",
+        "full_encoded": "🧨🔴 👩‍🏫 👩‍🏫 🎓 📅.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The happy child smiled joyfully.",
+        "full_form": "The happy child smiled joyfully.",
+        "original_encoded": "🧨🔴 😊 🧒 😊 🎉.",
+        "full_encoded": "🧨🔴 😊 🧒 😊 🎉.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Unhappy people feel sadness deeply.",
+        "full_form": "Unhappy people feel sadness deeply.",
+        "original_encoded": "😞 👥🔴 🤗 😢 🌊💧.",
+        "full_encoded": "😞 👥🔴 🤗 😢 🌊💧.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Teachers love teaching hopeful students.",
+        "full_form": "Teachers love teaching hopeful students.",
+        "original_encoded": "👩‍🏫 ❤️ 👩‍🏫 🤞 🎓.",
+        "full_encoded": "👩‍🏫 ❤️ 👩‍🏫 🤞 🎓.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The better solution works better.",
+        "full_form": "The better solution works better.",
+        "original_encoded": "🧨🔴 better 💡 💼🔴 better.",
+        "full_encoded": "🧨🔴 better 💡 💼🔴 better.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Children love playing with children.",
+        "full_form": "Children love playing with children.",
+        "original_encoded": "🧒 ❤️ 🎮 🤝🔴 🧒.",
+        "full_encoded": "🧒 ❤️ 🎮 🤝🔴 🧒.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Running quickly, he runs daily.",
+        "full_form": "Running quickly, he runs daily.",
+        "original_encoded": "🏃‍♂️ ⚡️, 👦🔴 🏃‍♂️ 📅.",
+        "full_encoded": "🏃‍♂️ ⚡️, 👦🔴 🏃‍♂️ 📅.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The fastest runners were running their best races.",
+        "full_form": "The fastest runners were running their best races.",
+        "original_encoded": "🧨🔴 ⚡ 🏃‍♂️ ⚡🔴 🏃‍♂️ 👥👥🔴 🏆 🏁.",
+        "full_encoded": "🧨🔴 ⚡ 🏃‍♂️ ⚡🔴 🏃‍♂️ 👥👥🔴 🏆 🏁.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Unhappy teachers rarely teach effectively.",
+        "full_form": "Unhappy teachers rarely teach effectively.",
+        "original_encoded": "😞 👩‍🏫 ❓📉 👩‍🏫 ✅.",
+        "full_encoded": "😞 👩‍🏫 ❓📉 👩‍🏫 ✅.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The children's books were carefully organized.",
+        "full_form": "The children's books were carefully organized.",
+        "original_encoded": "🧨🔴 🧒's 📚 ⚡🔴 🛡️ 📂✅.",
+        "full_encoded": "🧨🔴 🧒's 📚 ⚡🔴 🛡️ 📂✅.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "The algorithm processes data efficiently.",
+        "full_form": "The algorithm processes data efficiently.",
+        "original_encoded": "🧨🔴 🤖 ⚙️ 💾 🤝🌍.",
+        "full_encoded": "🧨🔴 🤖 ⚙️ 💾 🤝🌍.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      },
+      {
+        "original_text": "Computers enable faster communication.",
+        "full_form": "Computers enable faster communication.",
+        "original_encoded": "💻➗ 🔓⚙️ ⚡ 💬.",
+        "full_encoded": "💻➗ 🔓⚙️ ⚡ 💬.",
+        "length_change": 0,
+        "complexity_change": 0.0,
+        "sequences_differ": false
+      }
+    ],
+    "avg_length_reduction": 0.0,
+    "avg_complexity_reduction": 0.0,
+    "sequence_change_rate": 0.0
+  },
+  "edge_cases": {
+    "total_edge_cases": 10,
+    "successful_cases": 9,
+    "problematic_cases": 1,
+    "case_results": [
+      {
+        "original": "The bat flew while I held a bat.",
+        "encoded": "🧨🔴 🦇 🛫✈️ ⏳ 💤🔴 🤲 🅰️🔴 🦇.",
+        "decoded": "the guano reis bide i grope a guano .",
+        "description": "Homonym: bat (animal) vs bat (sports equipment)",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "The bank by the river bank was closed.",
+        "encoded": "🧨🔴 🏦 🚇🔴 🧨🔴 🌊 🏦 ⚡🔴 🚪.",
+        "decoded": "the bookie by the dankly bookie must stile .",
+        "description": "Homonym: bank (financial) vs bank (river)",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "I read the red book yesterday.",
+        "encoded": "💤🔴 📖 🧨🔴 🟥 📚 ⏰📅.",
+        "decoded": "i bibl the ruddy genera yesterday .",
+        "description": "Homophone: read (past) vs red (color)",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "The wind will wind the clock.",
+        "encoded": "🧨🔴 🌬️ 🔮🔴 🌬️ 🧨🔴 ⏰.",
+        "decoded": "the gale will gale the woken .",
+        "description": "Homophone: wind (air) vs wind (twist)",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "I can't won't shouldn't do it.",
+        "encoded": "💤🔴 💪🔴't 🥇't shouldn't 🔨🔴 📦🔵.",
+        "decoded": "i can 't bronze 't shouldn't make it .",
+        "description": "Multiple contractions",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "They're their friends over there.",
+        "encoded": "👬🔴'🌿🎶 👥👥🔴 🤗 🌉🔴 👉🔴.",
+        "decoded": "they 're their hue over there .",
+        "description": "They're/their/there confusion",
+        "has_issues": true,
+        "issues_found": []
+      },
+      {
+        "original": "I have 5 cats and 10 dogs in 2024.",
+        "encoded": "💤🔴 👍🔴 5 🐱 ➕🔴 10 🐶 📥🔴 2024.",
+        "decoded": "i should 5 tom and 10 doggie in 2024.",
+        "description": "Mixed text and numbers",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "The cost is $50.99 (fifty dollars).",
+        "encoded": "🧨🔴 💰 🧑‍🏫🔴 $50.99 (50️⃣ $).",
+        "decoded": "the fee is inexpensive 50.99 (fifty inexpensive ).",
+        "description": "Currency and parentheses",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "The CPU processes data via RAM.",
+        "encoded": "🧨🔴 CPU ⚙️ 💾 🛤️ 🐏.",
+        "decoded": "the CPU kilocycle save betake ram .",
+        "description": "Technical abbreviations",
+        "has_issues": false,
+        "issues_found": []
+      },
+      {
+        "original": "Dr. Smith works at NASA's HQ.",
+        "encoded": "Dr. 🛠️ 💼🔴 🎯🔴 NASA's HQ.",
+        "decoded": "Dr. clunky work for NASA's HQ.",
+        "description": "Titles and organizational abbreviations",
+        "has_issues": false,
+        "issues_found": []
+      }
+    ],
+    "success_rate": 90.0
+  }
+}
